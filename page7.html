@@ -348,23 +348,22 @@
     <h1>الجداول الدراسية</h1>
     
     <div class="grid-container">
-        <!-- الصفوف الابتدائية -->        <div class="grid-item elementary">الصف الاول الابتدائي</div>
-
-        <div class="grid-item elementary" onclick="openModal('second-elementary', 'elementary')">الصف الثاني الابتدائي</div>
-        <div class="grid-item elementary" onclick="openModal('third-elementary', 'elementary')">الصف الثالث الابتدائي</div>
-        <div class="grid-item elementary" onclick="openModal('fourth-elementary', 'elementary')">الصف الرابع الابتدائي</div>
-        <div class="grid-item elementary" onclick="openModal('fifth-elementary', 'elementary')">الصف الخامس الابتدائي</div>
-        <div class="grid-item elementary" onclick="openModal('sixth-elementary', 'elementary')">الصف السادس الابتدائي</div>
+        <!-- الصفوف الابتدائية -->
+        <div class="grid-item elementary" onclick="openModal('fourth-a', 'elementary')">الصف الرابع A</div>
+        <div class="grid-item elementary" onclick="openModal('fourth-b', 'elementary')">الصف الرابع B</div>
+        <div class="grid-item elementary" onclick="openModal('fifth-a', 'elementary')">الصف الخامس A</div>
+        <div class="grid-item elementary" onclick="openModal('fifth-b', 'elementary')">الصف الخامس B</div>
+        <div class="grid-item elementary" onclick="openModal('sixth-a', 'elementary')">الصف السادس A</div>
+        <div class="grid-item elementary" onclick="openModal('sixth-b', 'elementary')">الصف السادس B</div>
         
         <!-- الصفوف الإعدادية -->
         <div class="grid-item primary" onclick="openModal('first-preparatory', 'primary')">الصف الأول الإعدادي</div>
         <div class="grid-item primary" onclick="openModal('second-preparatory', 'primary')">الصف الثاني الإعدادي</div>
-        <div class="grid-item primary" onclick="openModal('third-preparatory', 'primary')">الصف الثالث الإعدادي</div>
+        <div class="grid-item primary" onclick="openModal('third-preparatory-languages', 'primary')">الصف الثالث الإعدادي لغات</div>
+        <div class="grid-item primary" onclick="openModal('third-preparatory-general', 'primary')">الصف الثالث الإعدادي عام</div>
         
         <!-- الصفوف الثانوية -->
-        <div class="grid-item secondary" onclick="openModal('first-secondary', 'secondary')">الصف الأول الثانوي</div>
-        <div class="grid-item secondary" onclick="openModal('second-secondary', 'secondary')">الصف الثاني الثانوي</div>
-        <div class="grid-item secondary" onclick="openModal('third-secondary', 'secondary')">الصف الثالث الثانوي</div>
+        <div class="grid-item secondary" onclick="openModal('first-secondary-languages', 'secondary')">الصف الأول الثانوي لغات</div>
     </div>
     
     <!-- زر الانتقال إلى صفحة code.html -->
@@ -373,110 +372,28 @@
     </a>
     
     <!-- النوافذ المنبثقة المحسنة -->
-    <div id="third-elementary" class="modal modal-elementary">
+    <!-- الصف الرابع A -->
+    <div id="fourth-a" class="modal modal-elementary">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('third-elementary')">&times;</span>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-child"></i>
-                </div>
-                <h2 class="modal-title">جدول الصف الثالث الابتدائي</h2>
-            </div>
-            <div class="schedule-container">
-                <div class="schedule-day">
-                    <span class="day-name">السبت</span>
-                    <span class="day-time">2 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الاثنين</span>
-                    <span class="day-time">2 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الأربعاء</span>
-                    <span class="day-time">2 ظهراً</span>
-                </div>
-            </div>
-            <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('third-elementary')">
-                    <i class="fas fa-times"></i> خروج
-                </button>
-                <button class="modal-button contact" onclick="contactWhatsApp()">
-                    <i class="fab fa-whatsapp"></i> تواصل
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <div id="second-elementary" class="modal modal-elementary">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('second-elementary')">&times;</span>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-child"></i>
-                </div>
-                <h2 class="modal-title">جدول الصف الثاني الابتدائي</h2>
-            </div>
-            <div class="schedule-container">
-                <div class="schedule-day">
-                    <span class="day-name">السبت</span>
-                    <span class="day-time">12 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الاثنين</span>
-                    <span class="day-time">12 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الأربعاء</span>
-                    <span class="day-time">12 ظهراً</span>
-                </div>
-            </div>
-            <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('second-elementary')">
-                    <i class="fas fa-times"></i> خروج
-                </button>
-                <button class="modal-button contact" onclick="contactWhatsApp()">
-                    <i class="fab fa-whatsapp"></i> تواصل
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <div id="fourth-elementary" class="modal modal-elementary">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('fourth-elementary')">&times;</span>
+            <span class="close" onclick="closeModal('fourth-a')">&times;</span>
             <div class="modal-header">
                 <div class="modal-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <h2 class="modal-title">جدول الصف الرابع الابتدائي</h2>
+                <h2 class="modal-title">جدول الصف الرابع A</h2>
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
                     <span class="day-name">السبت</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">عربي</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
                 </div>
-               
                 <div class="schedule-day">
-                    <span class="day-name">الاثنين</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">علوم</span>
-                </div>
-               
-                <div class="schedule-day">
-                    <span class="day-name">الأربعاء</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">رياضيات</span>
-                </div>
-               
-                <div class="schedule-day">
-                    <span class="day-name">الجمعة</span>
-                    <span class="day-time">10 صباحاً</span>
-                    <span class="day-subject">دراسات</span>
+                    <span class="day-name">الثلاثاء</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('fourth-elementary')">
+                <button class="modal-button exit" onclick="closeModal('fourth-a')">
                     <i class="fas fa-times"></i> خروج
                 </button>
                 <button class="modal-button contact" onclick="contactWhatsApp()">
@@ -486,39 +403,28 @@
         </div>
     </div>
     
-    <div id="fifth-elementary" class="modal modal-elementary">
+    <!-- الصف الرابع B -->
+    <div id="fourth-b" class="modal modal-elementary">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('fifth-elementary')">&times;</span>
+            <span class="close" onclick="closeModal('fourth-b')">&times;</span>
             <div class="modal-header">
                 <div class="modal-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <h2 class="modal-title">جدول الصف الخامس الابتدائي</h2>
+                <h2 class="modal-title">جدول الصف الرابع B</h2>
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
                     <span class="day-name">الأحد</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">عربي</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
                 </div>
                 <div class="schedule-day">
-                    <span class="day-name">الثلاثاء</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">علوم</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الخميس</span>
-                    <span class="day-time">3 عصراً</span>
-                    <span class="day-subject">رياضيات</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الجمعة</span>
-                    <span class="day-time">9 صباحاً</span>
-                    <span class="day-subject">دراسات</span>
+                    <span class="day-name">الأربعاء</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('fifth-elementary')">
+                <button class="modal-button exit" onclick="closeModal('fourth-b')">
                     <i class="fas fa-times"></i> خروج
                 </button>
                 <button class="modal-button contact" onclick="contactWhatsApp()">
@@ -528,39 +434,28 @@
         </div>
     </div>
     
-    <div id="sixth-elementary" class="modal modal-elementary">
+    <!-- الصف الخامس A -->
+    <div id="fifth-a" class="modal modal-elementary">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('sixth-elementary')">&times;</span>
+            <span class="close" onclick="closeModal('fifth-a')">&times;</span>
             <div class="modal-header">
                 <div class="modal-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <h2 class="modal-title">جدول الصف السادس الابتدائي</h2>
+                <h2 class="modal-title">جدول الصف الخامس A</h2>
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
-                    <span class="day-name">الأحد</span>
-                    <span class="day-time">4 عصراً</span>
-                    <span class="day-subject">عربي</span>
+                    <span class="day-name">السبت</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
                 </div>
                 <div class="schedule-day">
                     <span class="day-name">الثلاثاء</span>
-                    <span class="day-time">4 عصراً</span>
-                    <span class="day-subject">علوم</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الخميس</span>
-                    <span class="day-time">4 عصراً</span>
-                    <span class="day-subject">رياضيات</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الجمعة</span>
-                    <span class="day-time">8 صباحاً</span>
-                    <span class="day-subject">دراسات</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('sixth-elementary')">
+                <button class="modal-button exit" onclick="closeModal('fifth-a')">
                     <i class="fas fa-times"></i> خروج
                 </button>
                 <button class="modal-button contact" onclick="contactWhatsApp()">
@@ -570,6 +465,100 @@
         </div>
     </div>
     
+    <!-- الصف الخامس B -->
+    <div id="fifth-b" class="modal modal-elementary">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fifth-b')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="modal-title">جدول الصف الخامس B</h2>
+            </div>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <span class="day-name">الأحد</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الأربعاء</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button exit" onclick="closeModal('fifth-b')">
+                    <i class="fas fa-times"></i> خروج
+                </button>
+                <button class="modal-button contact" onclick="contactWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> تواصل
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الصف السادس A -->
+    <div id="sixth-a" class="modal modal-elementary">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sixth-a')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="modal-title">جدول الصف السادس A</h2>
+            </div>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <span class="day-name">السبت</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الثلاثاء</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button exit" onclick="closeModal('sixth-a')">
+                    <i class="fas fa-times"></i> خروج
+                </button>
+                <button class="modal-button contact" onclick="contactWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> تواصل
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الصف السادس B -->
+    <div id="sixth-b" class="modal modal-elementary">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sixth-b')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h2 class="modal-title">جدول الصف السادس B</h2>
+            </div>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <span class="day-name">الاثنين</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الخميس</span>
+                    <span class="day-time">2:30 - 4:00 مساءً</span>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button exit" onclick="closeModal('sixth-b')">
+                    <i class="fas fa-times"></i> خروج
+                </button>
+                <button class="modal-button contact" onclick="contactWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> تواصل
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الصف الأول الإعدادي -->
     <div id="first-preparatory" class="modal modal-primary">
         <div class="modal-content">
             <span class="close" onclick="closeModal('first-preparatory')">&times;</span>
@@ -581,16 +570,16 @@
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
-                    <span class="day-name">الأحد</span>
-                    <span class="day-time">1 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الثلاثاء</span>
-                    <span class="day-time">1 ظهراً</span>
+                    <span class="day-name">الاثنين</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
                 </div>
                 <div class="schedule-day">
                     <span class="day-name">الخميس</span>
-                    <span class="day-time">1 ظهراً</span>
+                    <span class="day-time">4:00 - 5:30 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الجمعة</span>
+                    <span class="day-time">2:00 - 3:30 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
@@ -604,6 +593,7 @@
         </div>
     </div>
     
+    <!-- الصف الثاني الإعدادي -->
     <div id="second-preparatory" class="modal modal-primary">
         <div class="modal-content">
             <span class="close" onclick="closeModal('second-preparatory')">&times;</span>
@@ -615,16 +605,16 @@
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
-                    <span class="day-name">السبت</span>
-                    <span class="day-time">1 ظهراً</span>
-                </div>
-                <div class="schedule-day">
                     <span class="day-name">الاثنين</span>
-                    <span class="day-time">1 ظهراً</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
                 </div>
                 <div class="schedule-day">
-                    <span class="day-name">الأربعاء</span>
-                    <span class="day-time">1 ظهراً</span>
+                    <span class="day-name">الخميس</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الجمعة</span>
+                    <span class="day-time">2:00 - 3:30 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
@@ -638,31 +628,32 @@
         </div>
     </div>
     
-    <div id="third-preparatory" class="modal modal-primary">
+    <!-- الصف الثالث الإعدادي لغات -->
+    <div id="third-preparatory-languages" class="modal modal-primary">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('third-preparatory')">&times;</span>
+            <span class="close" onclick="closeModal('third-preparatory-languages')">&times;</span>
             <div class="modal-header">
                 <div class="modal-icon">
                     <i class="fas fa-book-open"></i>
                 </div>
-                <h2 class="modal-title">جدول الصف الثالث الإعدادي</h2>
+                <h2 class="modal-title">جدول الصف الثالث الإعدادي لغات</h2>
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
                     <span class="day-name">الأحد</span>
-                    <span class="day-time">5 عصراً</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
                 </div>
                 <div class="schedule-day">
-                    <span class="day-name">الثلاثاء</span>
-                    <span class="day-time">5 عصراً</span>
+                    <span class="day-name">الأربعاء</span>
+                    <span class="day-time">5:30 - 7:00 مساءً</span>
                 </div>
                 <div class="schedule-day">
-                    <span class="day-name">الخميس</span>
-                    <span class="day-time">5 عصراً</span>
+                    <span class="day-name">الجمعة</span>
+                    <span class="day-time">3:30 - 5:00 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('third-preparatory')">
+                <button class="modal-button exit" onclick="closeModal('third-preparatory-languages')">
                     <i class="fas fa-times"></i> خروج
                 </button>
                 <button class="modal-button contact" onclick="contactWhatsApp()">
@@ -672,31 +663,59 @@
         </div>
     </div>
     
-    <div id="first-secondary" class="modal modal-secondary">
+    <!-- الصف الثالث الإعدادي عام -->
+    <div id="third-preparatory-general" class="modal modal-primary">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('first-secondary')">&times;</span>
+            <span class="close" onclick="closeModal('third-preparatory-general')">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2 class="modal-title">جدول الصف الثالث الإعدادي عام</h2>
+            </div>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <span class="day-name">السبت</span>
+                    <span class="day-time">1:00 - 2:30 مساءً</span>
+                </div>
+                <div class="schedule-day">
+                    <span class="day-name">الثلاثاء</span>
+                    <span class="day-time">1:00 - 2:30 مساءً</span>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button exit" onclick="closeModal('third-preparatory-general')">
+                    <i class="fas fa-times"></i> خروج
+                </button>
+                <button class="modal-button contact" onclick="contactWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> تواصل
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- الصف الأول الثانوي لغات -->
+    <div id="first-secondary-languages" class="modal modal-secondary">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('first-secondary-languages')">&times;</span>
             <div class="modal-header">
                 <div class="modal-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h2 class="modal-title">جدول الصف الأول الثانوي</h2>
+                <h2 class="modal-title">جدول الصف الأول الثانوي لغات</h2>
             </div>
             <div class="schedule-container">
                 <div class="schedule-day">
                     <span class="day-name">الأحد</span>
-                    <span class="day-time">2 ظهراً</span>
+                    <span class="day-time">1:00 - 2:30 مساءً</span>
                 </div>
                 <div class="schedule-day">
-                    <span class="day-name">الثلاثاء</span>
-                    <span class="day-time">2 ظهراً</span>
-                </div>
-                <div class="schedule-day">
-                    <span class="day-name">الخميس</span>
-                    <span class="day-time">2 ظهراً</span>
+                    <span class="day-name">الأربعاء</span>
+                    <span class="day-time">1:00 - 2:30 مساءً</span>
                 </div>
             </div>
             <div class="modal-buttons">
-                <button class="modal-button exit" onclick="closeModal('first-secondary')">
+                <button class="modal-button exit" onclick="closeModal('first-secondary-languages')">
                     <i class="fas fa-times"></i> خروج
                 </button>
                 <button class="modal-button contact" onclick="contactWhatsApp()">
@@ -718,7 +737,7 @@
         }
         
         function contactWhatsApp() {
-            window.open("https://wa.me/201150929598", "_blank");
+            window.open("https://wa.me/201097292334", "_blank");
         }
         
         // إغلاق النافذة عند النقر خارجها
