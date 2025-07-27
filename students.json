@@ -12,7 +12,7 @@
     "info": "",
     "_file": "students.json",
     "attendance": {
-      "السبت": "حاضر",
+      "السبت": "غائب",
       "الأحد": "حاضر"
     },
     "attendanceDates": [
