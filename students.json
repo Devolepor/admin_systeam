@@ -10,6 +10,13 @@
     "name": "رهف احمد",
     "main": "الصف الأول الثانوي",
     "info": "",
-    "_file": "students.json"
+    "_file": "students.json",
+    "attendance": {
+      "السبت": "حاضر",
+      "الأحد": "حاضر"
+    },
+    "attendanceDates": [
+      "٢٧‏/٧‏/٢٠٢٥"
+    ]
   }
 }
