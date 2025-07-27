@@ -22,5 +22,13 @@
     "phone": "",
     "group": "الصف الثالث الإعدادي",
     "_file": "students.json"
+  },
+  "756417": {
+    "name": "شسل",
+    "main": "الصف الثاني الثانوي",
+    "info": "",
+    "phone": "",
+    "group": "الصف الثاني الثانوي",
+    "_file": "students.json"
   }
 }
