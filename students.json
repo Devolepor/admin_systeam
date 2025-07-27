@@ -8,8 +8,8 @@
     "_file": "students.json",
     "fees": {
       "أغسطس": false,
-      "سبتمبر": true,
-      "أكتوبر": true,
+      "سبتمبر": false,
+      "أكتوبر": false,
       "نوفمبر": false,
       "ديسمبر": false,
       "يناير": false,
