@@ -5,7 +5,18 @@
     "info": "جيد",
     "phone": "201225137716",
     "group": "الصف الثاني الابتدائي",
-    "_file": "students.json"
+    "_file": "students.json",
+    "fees": {
+      "أغسطس": true,
+      "سبتمبر": false,
+      "أكتوبر": false,
+      "نوفمبر": false,
+      "ديسمبر": false,
+      "يناير": false,
+      "فبراير": false,
+      "مارس": false,
+      "أبريل": false
+    }
   },
   "358806": {
     "name": "أحمد نبيل",
