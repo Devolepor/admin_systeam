@@ -7,9 +7,9 @@
     "group": "الصف الثاني الابتدائي",
     "_file": "students.json",
     "fees": {
-      "أغسطس": true,
-      "سبتمبر": false,
-      "أكتوبر": false,
+      "أغسطس": false,
+      "سبتمبر": true,
+      "أكتوبر": true,
       "نوفمبر": false,
       "ديسمبر": false,
       "يناير": false,
